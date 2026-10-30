@@ -1,0 +1,23 @@
+{
+  "name": "pdf-forg",
+  "version": "1.0.0",
+  "description": "PDF Forge — Engineered Beyond Documents.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "Adarsh Maurya",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.2",
+    "helmet": "^8.3.0",
+    "multer": "^2.5.0",
+    "pdf-lib": "^1.17.1"
+  }
+}

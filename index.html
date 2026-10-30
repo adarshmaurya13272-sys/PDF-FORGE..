@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f8fa" />
+  <meta name="description" content="Convert, organize, and optimize documents in one beautifully engineered workspace." />
+  <title>PDF Forge — Engineered Beyond Documents</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="PDF Forge home"><span class="brand-mark"><i></i><i></i><i></i></span><span>pdf<span class="brand-light">forge</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="active" href="#home">Home</a><a href="#tools">All tools</a><a href="#features">Features</a></nav>
+    <div class="nav-actions"><a class="signin" href="#upload">Sign in</a><a class="button button-dark button-small" href="#upload">Get started <span>↗</span></a></div>
+    <button class="mobile-menu" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> THE DOCUMENT WORKSPACE, REIMAGINED</div>
+        <h1>Your documents.<br />Your control.<br /><span>Your forge.</span></h1>
+        <p>Everything you need to convert, edit, organize, and optimize PDFs — all in one beautifully engineered workspace.</p>
+        <div class="hero-actions"><a href="#upload" class="button button-dark">Explore the workspace <span>↗</span></a><a href="#tools" class="text-link">Discover all tools <span>↓</span></a></div>
+        <div class="trust-line"><div class="avatar-stack"><span>A</span><span>M</span><span>J</span><span>+</span></div><span><strong>Made for work that matters.</strong><br />Private by design · No account required</span></div>
+      </div>
+      <div class="hero-art" aria-label="PDF document preview illustration">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="floating-chip chip-secure"><span class="chip-icon">⌑</span><span><b>Private by design</b><small>Your files stay yours</small></span><span class="check">✓</span></div>
+        <div class="doc-back"><div></div><div></div><div></div></div>
+        <div class="document"><div class="doc-top"><span class="pdf-pill">PDF</span><span class="dots">•••</span></div><div class="doc-spark">✳</div><div class="doc-title">The future<br />is in your<br /><em>hands.</em></div><div class="doc-rule"></div><div class="doc-lines"><i></i><i></i><i></i></div><div class="doc-footer"><span>FIELDNOTES / 2025</span><span>01 — 08</span></div></div>
+        <div class="floating-chip chip-convert"><span class="convert-icon">↗</span><span><b>Ready to work</b><small>One workspace. Every tool.</small></span></div>
+        <div class="art-caption"><span class="caption-line"></span> DOCUMENT 001 <span class="caption-spacer"></span> BUILT TO MOVE WITH YOU</div>
+      </div>
+      <a class="scroll-cue" href="#tools"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="workspace-section" id="upload">
+      <div class="section-heading"><div><div class="eyebrow">01 — YOUR WORKSPACE</div><h2>Start with a file.<br /><span>Finish with clarity.</span></h2></div><p>Drop in a document to get started, or choose a tool to shape it exactly how you need.</p></div>
+      <div class="workspace-grid">
+        <div class="upload-card" id="dropzone" tabindex="0" role="button" aria-label="Choose files or drop them here">
+          <input id="file-input" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.xls,.xlsx,.ppt,.pptx" multiple hidden />
+          <div class="upload-symbol"><span>↑</span><i></i></div>
+          <h3>Drop your files here</h3><p>or <button class="browse-button" type="button">browse files</button> from your device</p>
+          <div class="file-types"><span>PDF</span><span>DOCX</span><span>JPG</span><span>PNG</span><span>XLSX</span><span>PPTX</span></div>
+          <div class="upload-privacy"><span>♧</span> Your files are processed securely <span class="privacy-sep">·</span> Max 100 MB</div>
+          <div class="file-list" aria-live="polite"></div>
+        </div>
+        <aside class="quick-card"><div class="quick-top"><span class="quick-icon">✳</span><span class="quick-label">QUICK ACTION</span></div><h3>What are we<br />making today?</h3><p>Pick a starting point. You can always change your mind.</p><button class="quick-action" data-tool="Merge PDF"><span class="action-icon merge-icon">⊕</span><span><b>Combine documents</b><small>Bring everything together</small></span><span class="action-arrow">↗</span></button><button class="quick-action" data-tool="Compress PDF"><span class="action-icon compress-icon">⌑</span><span><b>Make files lighter</b><small>Smaller size, same quality</small></span><span class="action-arrow">↗</span></button><button class="quick-action" data-tool="PDF to Word"><span class="action-icon word-icon">W</span><span><b>Turn PDF into Word</b><small>Keep editing with ease</small></span><span class="action-arrow">↗</span></button></aside>
+      </div>
+      <div class="upload-status" aria-live="polite"></div>
+    </section>
+
+    <section class="tools-section" id="tools">
+      <div class="tools-heading"><div><div class="eyebrow">02 — THE TOOLKIT</div><h2>Good work takes<br /><span>the right tools.</span></h2></div><div class="tools-controls"><span class="tool-count">17 tools · one workspace</span><label class="search-box"><span>⌕</span><input id="tool-search" type="search" placeholder="Find a tool..." aria-label="Search tools" /><kbd>⌘ K</kbd></label></div></div>
+      <div class="tool-grid" id="tool-grid"></div><div class="no-results" hidden>No tools found. Try a different search.</div>
+    </section>
+
+    <section class="feature-band" id="features"><div class="feature-inner"><div class="feature-mark">✳</div><div><div class="eyebrow">MADE FOR THE WAY YOU WORK</div><h2>Less document friction.<br /><span>More room for the good stuff.</span></h2></div><a class="button button-light" href="#upload">Make something happen <span>↗</span></a></div><div class="feature-details"><div><span>01</span><b>Considered by design</b><p>Every detail has a purpose. Every workflow makes sense.</p></div><div><span>02</span><b>Private, always</b><p>Your documents are yours. No surprises, no noise.</p></div><div><span>03</span><b>Everything in one place</b><p>A complete toolkit that works as beautifully as you do.</p></div></div></section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span class="brand-mark"><i></i><i></i><i></i></span><span>pdf<span class="brand-light">forge</span></span></a><span class="footer-tagline">ENGINEERED BEYOND DOCUMENTS.</span><span class="copyright">PDF FORGE © 2026 <span class="credit-divider">|</span> Designed &amp; Developed by <a href="https://github.com/adarshmaurya13272-sys" target="_blank" rel="noopener noreferrer">Adarsh Maurya</a></span></footer>
+
+  <dialog id="tool-dialog" class="tool-dialog"><button class="dialog-close" aria-label="Close">×</button><div class="dialog-icon"></div><div class="eyebrow">PDF FORGE TOOLKIT</div><h2></h2><p></p><div class="dialog-options" hidden><label class="option-pages">Pages <input name="pages" type="text" placeholder="All pages (e.g. 1,3-5)" /></label><label class="option-rotation">Rotation <select name="rotation"><option value="90">90° clockwise</option><option value="180">180°</option><option value="270">270° clockwise</option></select></label><label class="option-watermark">Watermark text <input name="watermark" type="text" maxlength="100" placeholder="Confidential" /></label></div><div class="dialog-notice" aria-live="polite"><span>ⓘ</span><span>Choose file(s) in the workspace, then run this tool. Files are processed temporarily and not stored.</span></div><button type="button" class="button button-dark dialog-cta">Choose files <span>↑</span></button></dialog>
+</body>
+</html>
